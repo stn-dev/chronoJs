@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  border: 5px solid rgb(14, 147, 173);
+  border-radius: 8%;
+  background-image: url(./593278.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 14px 16px 20px 4px #00000057;
+  animation: point 60s ease-in-out infinite;
+}
+.time {
+  width: 90%;
+  height: 50%;
+  border-radius: 8%;
+  border: 3px solid rgb(14, 147, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: white;
+  backdrop-filter: blur(3px);
+}
+
+.btn {
+  width: 80%;
+  height: 30%;
+  gap: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn button {
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid rgb(14, 147, 173);
+  color: white;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+.btn :hover {
+  border: 2px solid aqua;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn button:active {
+  border: 2px solid white;
+  color: rgb(43, 0, 255);
+}
+.boule {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.359);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+@keyframes point {
+  0% {
+    background-image: url(./593278.jpg);
+    background-size: cover;
+  }
+  25% {
+    background-image: url(./jujutsu-kaisen-gojo-satoru-anime-anime-boys-blue-eyes-hd-wallpaper-preview.jpg);
+    background-size: cover;
+  }
+  50% {
+    background-image: url(./HD-wallpaper-anime-boy-gaming-jacket-keyboard-warrior-monitor-anime.jpg);
+    background-size: cover;
+  }
+  75% {
+    background-image: url(./1328866.png);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(./593278.jpg);
+    background-size: cover;
+  }
+}
